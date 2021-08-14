@@ -1,3 +1,6 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
 client.on('ready', (message) => {
   console.log(`Logged in as ${client.user.tag}!`); //어떤 계정으로 로그인했는지 콘솔에 표기합니다.
 });
@@ -19,3 +22,5 @@ client.on('message',(message)=>{
   
   //이 밑은 삭제하지 마시오
 })
+
+client.login('봇 토큰을 넣으세요');
